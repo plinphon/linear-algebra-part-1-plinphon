@@ -1,0 +1,137 @@
+type: order_cards
+visible: true
+header: ""
+text: ""
+shuffle: true
+score: 1
+quiz:
+  variants:
+    - text: |
+        As a first stage, consider scalar product in 2D for the vectors, 
+        one of which is 
+        aligned with X axis:
+
+        $\mathbf x = \begin{bmatrix}
+        x_1 \\
+        0 
+        \end{bmatrix}, \mathbf y = \begin{bmatrix}
+        y_1 \\
+        y_2 
+        \end{bmatrix}$
+    - text: |
+        Scalar product in this case is simply
+
+        $\left<\mathbf x, \mathbf y\right> = x_1 y_1$
+    - text: |
+        On the other hand, 
+        
+        $y_1 = |\mathbf y| \cos(\angle_{\mathbf x}^{\mathbf y})$
+
+        $x_1 = |\mathbf x|$
+    - text: |
+        Thus in the simpliest case,
+
+        $\left<\mathbf x, \mathbf y\right> = x_1 y_1 = |\mathbf x| |\mathbf y| \cos(\angle_{\mathbf x}^{\mathbf y})$
+    - text: |
+        Secondly, consider the scalar product for any orientation of the
+        vectors in 2D:
+
+        $\mathbf x = \begin{bmatrix}
+        x_1 \\
+        x_2
+        \end{bmatrix}, \mathbf y = \begin{bmatrix}
+        y_1 \\
+        y_2 
+        \end{bmatrix}$
+
+    - text: |
+        In that case, we can write:
+        
+        $\begin{cases}
+        y_1 = |\mathbf y| \sin (\theta + \phi) \\
+        x_1 = |\mathbf x| \sin \phi \\
+        y_2 = |\mathbf y| \cos (\theta + \phi) \\
+        x_2 = |\mathbf x| \cos \phi \\
+        \left<\mathbf x, \mathbf y \right> = x_1 y_1 + x_2 y_2 \\
+        \sin (\theta + \phi) = \sin(\theta) \cos(\phi) + \sin(\phi) \cos(\theta) \\
+        \cos (\theta + \phi) = \cos(\theta) \cos(\phi) - \sin(\phi) \sin(\theta) \\
+        \end{cases}$
+
+    - text: |
+        Collecting these expressions together, we will get
+        
+        $\left<\mathbf x, \mathbf y \right> = |\mathbf x| |\mathbf y| 
+        \cos\theta (\sin^2\phi + \cos^2 \phi) = 
+        |\mathbf x| |\mathbf y| \cos\theta$
+
+    - text: |
+        Now consider the scalar product in ND:
+
+        $\left<\mathbf x, \mathbf y\right> = \sum_{k = 1}^N x_k y_k$
+    - text: |
+        This expression can be reformulated as:
+
+        $\left<\mathbf x, \mathbf y\right> = \left(\sum_{k = 1}^{N-2} x_k y_k\right) + x_{N - 1} y_{N - 1} + x_{N} y_{N}$
+
+    - text: |
+        That means that we can split two vectors in parts, and the scalar product
+        of the vectors will be the sum of scalar products of these two parts
+
+        $\left<\mathbf x, \mathbf y\right> = \left<\mathbf x_{N - 2}, \mathbf y_{N - 2}\right> + \left<\mathbf x_2, \mathbf y_2\right>$
+
+    - text: |
+        For 2D part you can perform rotations without change of scalar product
+
+        We can always do the rotation of 2D vector so that one of the coordinates is $0$
+
+    - text: |
+        Selecting at first the last to coordinates and setting one of them to
+        zero using rotation, we get rid of the last coordinate.
+
+    - text: |
+        Repeat this process until we get a vector of all zeros except for the
+        first coordinate:
+
+        $\mathbf x = \begin{bmatrix}
+        x_1 \\
+        0 \\
+        \vdots \\
+        0
+        \end{bmatrix}$
+
+        Vector $\mathbf y$ will be transformed to some other vector:
+
+        $\mathbf y = \begin{bmatrix}
+        y_1 \\
+        y_2 \\
+        \vdots \\
+        y_N
+        \end{bmatrix}$
+
+    - text: |
+        Now we can eliminate all the coordinates of $\mathbf y$ with
+        rotations keeping the coordinates of $\mathbf x$ unchanged
+        (because zero vector is a zero vector regardless of rotation)
+
+    - text: |
+        Now we have a pair of vectors:
+
+        $\mathbf x = \begin{bmatrix}
+        x_1 \\
+        0 \\
+        \vdots \\
+        0
+        \end{bmatrix}, \mathbf y = \begin{bmatrix}
+        y_1 \\
+        y_2 \\
+        0 \\
+        \vdots \\
+        0
+        \end{bmatrix}$
+
+        And this pair of vectors is 2D case with one of vectors aligned with
+        1st axis
+
+        And hence we get for any case
+
+        $\left<\mathbf x, \mathbf y\right> = x_1 y_1 = |\mathbf x| |\mathbf y| \cos(\angle_{\mathbf x}^{\mathbf y})$

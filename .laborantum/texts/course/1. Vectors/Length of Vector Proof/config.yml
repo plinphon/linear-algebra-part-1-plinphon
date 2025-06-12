@@ -1,0 +1,31 @@
+type: order_cards
+visible: false
+header: Length of Vector Proof
+text: Order the cards to get the proof of the formula for length of a vector
+shuffle: true
+score: 1
+quiz:
+  variants:
+    - text: |
+        Take $\mathbf x_{N} \in \mathbb R^N$
+    - text: |
+        Take the last coordinate, $x_N$. 
+
+        Suppose that we know $|\mathbf x_{N - 1}|$. Then length of the vector
+        $\mathbf x_N$ is the hypothenuse of the trangle with one catheti of
+        length $x_N$ and another of length $|\mathbf x_{N - 1}|$.
+
+        Thus we can write:
+    - text: |
+        $|\mathbf x_{N}| = \sqrt{x_N^2 + |\mathbf x_{N-1}|^2}$
+    - text: |
+        Repeating the idea above for the vector $\mathbf x_{N - 1}$:
+
+        $|\mathbf x_{N-1}| = \sqrt{x_{N-1}^2 + |\mathbf x_{N-2}|^2}$
+    - text: |
+        Repeat until you get $|\mathbf x_2|$
+    - text: |
+        $|\mathbf x_2| = \sqrt{x_1^2 + x_2^2}$
+    - text: >
+        Collecting it all, we get $|\mathbf x_N| = \sqrt{\sum_{k=1}^N x_k^2} =
+        \sqrt{x_1^2 + x_2^2 + x_3^2 + \dots + x_N^2}$

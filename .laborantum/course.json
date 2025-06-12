@@ -1,0 +1,11 @@
+{
+    "courseName": "linear-algebra-1",
+    "includeData": [
+        ".laborantum/utils",
+        ".devcontainer",
+        ".vscode",
+        ".gitignore",
+        "LICENSE",
+        "README.md"],
+    "buildFolder": "./build"
+}
