@@ -4,14 +4,14 @@
             "path": "/texts/course/config.yml",
             "status": {
                 "total": 229,
-                "correct": 206.2491136831453
+                "correct": 208.82054225457387
             }
         },
         {
             "path": "/texts/course/1. Vectors/config.yml",
             "status": {
                 "total": 34,
-                "correct": 25.407447016478653
+                "correct": 25.978875587907226
             }
         },
         {
@@ -46,7 +46,7 @@
             "path": "/texts/course/6. Determinants/config.yml",
             "status": {
                 "total": 68,
-                "correct": 59.175
+                "correct": 61.175
             }
         },
         {
@@ -62,15 +62,15 @@
             "path": "/texts/course/1. Vectors/Length of Vector Proof/config.yml",
             "status": {
                 "total": 1,
-                "correct": 0.14285714285714285,
+                "correct": 0.7142857142857143,
                 "selectedVariantIds": [
-                    6,
-                    1,
                     0,
+                    1,
+                    2,
                     4,
-                    5,
                     3,
-                    2
+                    5,
+                    6
                 ]
             }
         },
