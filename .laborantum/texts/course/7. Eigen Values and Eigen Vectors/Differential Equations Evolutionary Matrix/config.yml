@@ -39,4 +39,16 @@ quiz:
         result: $$ A \exp(At)\mathbf x_0$$
     - text: |
         Hence, $\exp(At)\mathbf x_0$ is a solution of original DE
+    - text: |
+        Finally, recalling the diagonalized form of the exponent of $At$
+
+        $\exp(At) = S \exp(\Lambda t) S^{-1}$
+    - text: |
+        One can get the simplified answer for the SLE:
+        
+        $\mathbf x(t) = S \exp(\Lambda t) S^{-1} \mathbf x_0 = S \exp(\Lambda t) \mathbf C$
+    - text: |
+        That can be rewritten as:
+        
+        $\mathbf x(t) = \sum_{k=1}^N C_k \mathbf v_k \exp(\lambda_k t)$
 visible: false
