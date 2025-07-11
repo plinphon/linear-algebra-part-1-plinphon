@@ -3,8 +3,8 @@
         {
             "path": "/texts/course/config.yml",
             "status": {
-                "total": 229,
-                "correct": 208.82054225457387
+                "total": 258,
+                "correct": 217.75668944072106
             }
         },
         {
@@ -52,8 +52,8 @@
         {
             "path": "/texts/course/7. Eigen Values and Eigen Vectors/config.yml",
             "status": {
-                "total": 1,
-                "correct": 0
+                "total": 29,
+                "correct": 8.936147186147187
             }
         }
     ],
@@ -28153,6 +28153,97 @@
                 "selectedVariantIds": [
                     3,
                     2
+                ]
+            }
+        },
+        {
+            "path": "/texts/course/7. Eigen Values and Eigen Vectors/Definition/config.yml",
+            "status": {
+                "total": 3,
+                "correct": 3,
+                "selectedVariantIds": [
+                    1,
+                    0,
+                    5,
+                    2,
+                    3
+                ]
+            }
+        },
+        {
+            "path": "/texts/course/7. Eigen Values and Eigen Vectors/Properties/config.yml",
+            "status": {
+                "total": 3,
+                "correct": 3,
+                "selectedVariantIds": [
+                    1,
+                    7,
+                    8,
+                    5,
+                    0
+                ]
+            }
+        },
+        {
+            "path": "/texts/course/7. Eigen Values and Eigen Vectors/Diagonalized Form of Matrix/config.yml",
+            "status": {
+                "total": 5,
+                "correct": 1.4285714285714284,
+                "selectedVariantIds": [
+                    1,
+                    2,
+                    0,
+                    3,
+                    4,
+                    6,
+                    5
+                ]
+            }
+        },
+        {
+            "path": "/texts/course/7. Eigen Values and Eigen Vectors/Matrix Power and Exponent/config.yml",
+            "status": {
+                "total": 5,
+                "correct": 0.41666666666666663,
+                "selectedVariantIds": [
+                    6,
+                    8,
+                    5,
+                    2,
+                    1,
+                    10,
+                    4,
+                    11,
+                    7,
+                    9,
+                    0,
+                    3
+                ]
+            }
+        },
+        {
+            "path": "/texts/course/7. Eigen Values and Eigen Vectors/Differential Equations Evolutionary Matrix/config.yml",
+            "status": {
+                "total": 1,
+                "correct": 0,
+                "selectedVariantIds": []
+            }
+        },
+        {
+            "path": "/texts/course/7. Eigen Values and Eigen Vectors/Differential Equations General Solution/config.yml",
+            "status": {
+                "total": 1,
+                "correct": 0,
+                "selectedVariantIds": []
+            }
+        },
+        {
+            "path": "/texts/course/7. Eigen Values and Eigen Vectors/Jordan Chain/config.yml",
+            "status": {
+                "total": 3,
+                "correct": 1.0909090909090908,
+                "selectedVariantIds": [
+                    10
                 ]
             }
         }
