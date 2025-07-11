@@ -1,1 +1,7 @@
-order: []
+order:
+  - Definition
+  - Properties
+  - Diagonalized Form of Matrix
+  - Differential Equations Evolutionary Matrix
+  - Differential Equations General Solution
+  - Jordan Chain
